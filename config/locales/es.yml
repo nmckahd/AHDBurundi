@@ -110,6 +110,9 @@ es:
     attributes:
       user:
         pref_lang: "Idioma Preferido"
+    errors:
+      messages:
+        invalid_password: "La contraseña debe incluir por lo menos un número, una letra minúscula y una letra mayúscula."
   broadcast:
     send_broadcast: "Enviar Difusión"
     sms_error: "Error SMS"
