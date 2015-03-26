@@ -70,5 +70,10 @@ module ELMO
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # Set X-Frame-Options
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => 'DENY'
+    }
   end
 end
